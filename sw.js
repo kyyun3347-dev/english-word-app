@@ -1,4 +1,4 @@
-const CACHE = 'engwords-v1';
+const CACHE = 'engwords-v2';
 const ASSETS = ['./', './index.html', './style.css', './app.js',
                 './manifest.json', './icon.svg'];
 
