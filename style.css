@@ -112,7 +112,7 @@ html, body {
 /* ── Learn (card flip) ── */
 .learn-body {
   flex: 1; display: flex; flex-direction: column;
-  padding: 16px 20px 24px;
+  padding: 16px 12px 24px;
 }
 
 .progress-bar-wrap {
@@ -129,12 +129,23 @@ html, body {
   color: var(--muted); margin-bottom: 14px;
 }
 
+/* 카드 + 화살표 행 */
+.card-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 0;
+  margin-bottom: 16px;
+}
+
 /* flip card */
 .flip-card {
   flex: 1;
+  height: 100%;
   perspective: 1200px;
   cursor: pointer;
-  min-height: 320px;
+  min-height: 340px;
   touch-action: pan-y;
 }
 .flip-card-inner {
@@ -192,19 +203,15 @@ html, body {
   word-break: break-word;
 }
 
-.card-nav {
-  display: flex; justify-content: space-between;
-  align-items: center; margin-top: 16px;
-}
 .nav-btn {
   background: var(--card); border: none;
-  width: 48px; height: 48px; border-radius: 50%;
-  font-size: 20px; cursor: pointer;
+  width: 52px; height: 52px; border-radius: 50%;
+  font-size: 26px; cursor: pointer;
   box-shadow: var(--shadow); display: flex;
   align-items: center; justify-content: center;
+  flex-shrink: 0;
 }
-.nav-btn:disabled { opacity: .3; }
-.card-index { font-size: 15px; font-weight: 600; color: var(--muted); }
+.nav-btn:disabled { opacity: .25; }
 
 /* ── Quiz ── */
 .quiz-body {
@@ -267,6 +274,37 @@ html, body {
 }
 .wrong-item .wi-en { font-size: 16px; font-weight: 700; color: var(--navy); }
 .wrong-item .wi-ko { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+/* ── Archive (이전 날짜) ── */
+.archive-section { margin-top: 8px; }
+.archive-title {
+  font-size: 13px; font-weight: 700;
+  color: var(--muted); margin-bottom: 10px;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.archive-list { display: flex; flex-direction: column; gap: 8px; }
+.archive-item {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 13px 16px;
+  display: flex; align-items: center; gap: 12px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  border: none; width: 100%; text-align: left;
+  transition: transform .1s;
+}
+.archive-item:active { transform: scale(.97); }
+.archive-item.today-item { border: 2px solid var(--blue); }
+.archive-item .ai-label {
+  font-size: 15px; font-weight: 700; color: var(--navy); flex: 1;
+}
+.archive-item .ai-date { font-size: 12px; color: var(--muted); }
+.archive-item .ai-prog {
+  font-size: 11px; font-weight: 600;
+  background: var(--bg); border-radius: 8px;
+  padding: 3px 8px; color: var(--muted);
+}
+.archive-item .ai-prog.done { background: #DCFCE7; color: #166534; }
 
 /* ── Utility ── */
 .hidden { display: none !important; }

@@ -4,6 +4,7 @@
 const State = {
   today: null,        // today.json payload
   words: [],          // [{en, pos, ko, ex}]
+  selectedKey: null,  // 선택된 날짜 key (null = 오늘)
 
   // Learn
   learnIndex: 0,
@@ -31,11 +32,19 @@ function showScreen(id) {
 /* ══════════════════════════════════════════════════════
    HOME
 ══════════════════════════════════════════════════════ */
-async function initHome() {
+async function loadDayData(key) {
+  const url = key
+    ? `./data/${key}.json?t=${Date.now()}`
+    : `./today.json?t=${Date.now()}`;
+  const res = await fetch(url);
+  return res.json();
+}
+
+async function initHome(key) {
   try {
-    const res = await fetch('./today.json?t=' + Date.now());
-    State.today = await res.json();
+    State.today = await loadDayData(key || null);
     State.words = State.today.words;
+    State.selectedKey = key || null;
   } catch {
     $('home-error').classList.remove('hidden');
     showScreen('screen-home');
@@ -57,7 +66,39 @@ async function initHome() {
   $('prog-qa').textContent    = prog.quizA >= 0 ? prog.quizA + '점' : '-';
   $('prog-qb').textContent    = prog.quizB >= 0 ? prog.quizB + '점' : '-';
 
+  await renderArchive(key);
   showScreen('screen-home');
+}
+
+async function renderArchive(activeKey) {
+  const container = $('archive-list');
+  container.innerHTML = '';
+  let archive = [];
+  try {
+    const res = await fetch('./data/archive.json?t=' + Date.now());
+    archive = await res.json();
+  } catch { return; }
+
+  archive.forEach(entry => {
+    const prog = loadProgress(entry.date);
+    const isActive = (activeKey === entry.key) || (!activeKey && entry === archive[0]);
+
+    const btn = document.createElement('button');
+    btn.className = 'archive-item' + (isActive ? ' today-item' : '');
+
+    const progText = prog.learnDone
+      ? (prog.quizB >= 0 ? `A:${prog.quizA} B:${prog.quizB}` : prog.quizA >= 0 ? `A:${prog.quizA}점` : '학습완료')
+      : '-';
+    const progDone = prog.learnDone || prog.quizA >= 0;
+
+    btn.innerHTML = `
+      <span class="ai-label">${entry.label}</span>
+      <span class="ai-date">${entry.date}</span>
+      <span class="ai-prog${progDone ? ' done' : ''}">${progText}</span>
+    `;
+    btn.addEventListener('click', () => initHome(entry.key));
+    container.appendChild(btn);
+  });
 }
 
 /* ══════════════════════════════════════════════════════
@@ -145,6 +186,7 @@ $('btn-learn-back').addEventListener('click', () => showScreen('screen-home'));
 $('btn-to-quiz').addEventListener('click', () => {
   saveProgress(State.today.date, { learnDone: true });
   $('prog-learn').textContent = '완료';
+  renderArchive(State.selectedKey);
   startQuiz('A');
 });
 
