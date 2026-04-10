@@ -5,6 +5,7 @@ const State = {
   today: null,        // today.json payload
   words: [],          // [{en, pos, ko, ex}]
   selectedKey: null,  // 선택된 날짜 key (null = 오늘)
+  currentKey: null,   // 현재 로드된 key (progress 저장에 사용)
 
   // Learn
   learnIndex: 0,
@@ -56,12 +57,17 @@ async function initHome(key) {
     ? `Review ${String(t.review_num).padStart(2,'0')}`
     : `Day ${String(t.day).padStart(3,'0')}`;
 
+  // key 결정: 명시적으로 선택된 key 또는 today.json에서 파생
+  State.currentKey = key || (t.type === 'review'
+    ? `review${String(t.review_num).padStart(2,'0')}`
+    : `day${String(t.day).padStart(3,'0')}`);
+
   $('home-day-label').textContent = label;
   $('home-day-date').textContent  = t.date;
   $('home-day-type').textContent  = t.type === 'review' ? '🔁 복습일' : '📖 학습일';
   $('home-total').textContent     = t.total;
 
-  const prog = loadProgress(t.date);
+  const prog = loadProgress(State.currentKey);
   $('prog-learn').textContent = prog.learnDone ? '완료' : '-';
   $('prog-qa').textContent    = prog.quizA >= 0 ? prog.quizA + '점' : '-';
   $('prog-qb').textContent    = prog.quizB >= 0 ? prog.quizB + '점' : '-';
@@ -80,7 +86,7 @@ async function renderArchive(activeKey) {
   } catch { return; }
 
   archive.forEach(entry => {
-    const prog = loadProgress(entry.date);
+    const prog = loadProgress(entry.key);
     const isActive = (activeKey === entry.key) || (!activeKey && entry === archive[0]);
 
     const btn = document.createElement('button');
@@ -184,7 +190,7 @@ $('btn-next').addEventListener('click', () => learnNav(1));
 $('btn-learn-back').addEventListener('click', () => showScreen('screen-home'));
 
 $('btn-to-quiz').addEventListener('click', () => {
-  saveProgress(State.today.date, { learnDone: true });
+  saveProgress(State.currentKey, { learnDone: true });
   $('prog-learn').textContent = '완료';
   renderArchive(State.selectedKey);
   startQuiz('A');
@@ -294,11 +300,11 @@ function finishQuiz() {
   const total = State.quizWords.length;
 
   if (State.quizMode === 'A') {
-    saveProgress(State.today.date, { quizA: score });
+    saveProgress(State.currentKey, { quizA: score });
     $('prog-qa').textContent = score + '점';
     showResult(score, total, '영어 → 한국어');
   } else {
-    saveProgress(State.today.date, { quizB: score });
+    saveProgress(State.currentKey, { quizB: score });
     $('prog-qb').textContent = score + '점';
     showResult(score, total, '한국어 → 영어');
   }
