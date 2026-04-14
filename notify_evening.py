@@ -7,7 +7,7 @@ if __name__ == "__main__":
     # 학습 안 한 사람
     send(
         title="공부 안 하면 장수영처럼 가슴커짐",
-        message="오늘 단어 아직 안 외웠지? 지금 당장 해",
+        message="오늘 단어 아직 안 외웠지? 지금 당장 하자",
         filters=[
             {"field": "tag", "key": "learned_date", "relation": "!=", "value": TODAY},
         ]
