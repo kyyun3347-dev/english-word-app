@@ -1,7 +1,7 @@
 import urllib.request, urllib.error, json, os
 
 APP_ID  = "747b3763-3c9b-4fc3-97ee-eaea25517c39"
-API_KEY = os.environ.get("ONESIGNAL_API_KEY", "os_v2_app_or5toyz4tnh4hf7o5lvckul4hebivjj6itzu3ofvgowmwyzk3abkw5dzc75t5b6pxwz3yr4v24kw6dd5dwkklkzjyv7e6hpy2lpvjci")
+API_KEY = os.environ.get("ONESIGNAL_API_KEY", "os_v2_app_or5toyz4tnh4hf7o5lvckul4hhodck3dwxyuloub76k6dab3wfurpcgxo2gvwap335m2e4vflcfvxmfr77hndm43ya7nrd4ytxjj26y")
 
 
 def send(title, message, filters=None, segments=None):
@@ -21,7 +21,7 @@ def send(title, message, filters=None, segments=None):
     req  = urllib.request.Request(
         "https://onesignal.com/api/v1/notifications",
         data=data,
-        headers={"Content-Type": "application/json", "Authorization": f"Basic {API_KEY}"},
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {API_KEY}"},
         method="POST",
     )
     try:
