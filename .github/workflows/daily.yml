@@ -1,4 +1,4 @@
-name: Daily Word Generation (3PM KST)
+name: daily-generate
 
 on:
   schedule:
