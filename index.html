@@ -11,6 +11,17 @@
   <link rel="apple-touch-icon" href="icon.svg">
   <link rel="stylesheet" href="style.css">
   <title>영단어 50 Daily</title>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "747b3763-3c9b-4fc3-97ee-eaea25517c39",
+        serviceWorkerPath: "OneSignalSDKWorker.js",
+        notifyButton: { enable: false },
+      });
+    });
+  </script>
 </head>
 <body>
 <div id="app">
