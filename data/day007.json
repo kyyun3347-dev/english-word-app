@@ -1,99 +1,45 @@
 {
-  "date": "2026-04-14",
+  "date": "2026-04-15",
   "day": 7,
   "type": "study",
   "review_num": null,
   "total": 50,
   "words": [
     {
-      "en": "uptight",
+      "en": "be on the verge of",
+      "pos": "v",
+      "ko": "~의 직전이다",
+      "ex": "The talks are on the verge of collapse."
+    },
+    {
+      "en": "automation",
+      "pos": "n",
+      "ko": "자동화",
+      "ex": "Automation is displacing millions of jobs."
+    },
+    {
+      "en": "inequality",
+      "pos": "n",
+      "ko": "불평등",
+      "ex": "Income inequality continues to widen."
+    },
+    {
+      "en": "groundbreaking",
       "pos": "adj",
-      "ko": "긴장한, 까다로운",
-      "ex": "She's too uptight about small mistakes."
+      "ko": "획기적인",
+      "ex": "The study is groundbreaking."
     },
     {
-      "en": "lip service",
-      "pos": "n",
-      "ko": "말뿐인 지지",
-      "ex": "Politicians pay lip service to climate action."
-    },
-    {
-      "en": "infrastructure",
-      "pos": "n",
-      "ko": "인프라",
-      "ex": "The government plans to invest in infrastructure."
-    },
-    {
-      "en": "reach a tipping point",
-      "pos": "phrase",
-      "ko": "임계점에 도달하다",
-      "ex": "Tensions have reached a tipping point."
-    },
-    {
-      "en": "locals",
-      "pos": "n",
-      "ko": "현지인들",
-      "ex": "Ask the locals for the best food spots."
-    },
-    {
-      "en": "take effect",
+      "en": "afford",
       "pos": "v",
-      "ko": "효력이 발생하다",
-      "ex": "The new law takes effect in January."
+      "ko": "여유가 되다",
+      "ex": "I can't afford a vacation right now."
     },
     {
-      "en": "public sector",
-      "pos": "n",
-      "ko": "공공 부문",
-      "ex": "Public sector workers went on strike."
-    },
-    {
-      "en": "scholarship",
-      "pos": "n",
-      "ko": "장학금",
-      "ex": "She received a scholarship to study abroad."
-    },
-    {
-      "en": "transfer",
-      "pos": "v/n",
-      "ko": "환승하다 / 환승",
-      "ex": "You'll need to transfer at the next station."
-    },
-    {
-      "en": "empty promise",
-      "pos": "n",
-      "ko": "공약 불이행",
-      "ex": "Voters are tired of empty promises."
-    },
-    {
-      "en": "vicious cycle",
-      "pos": "n",
-      "ko": "악순환",
-      "ex": "Poverty and poor health form a vicious cycle."
-    },
-    {
-      "en": "so to speak",
+      "en": "think outside the box",
       "pos": "phrase",
-      "ko": "말하자면",
-      "ex": "He's our unofficial leader, so to speak."
-    },
-    {
-      "en": "fearmongering",
-      "pos": "n",
-      "ko": "공포 조장",
-      "ex": "The opposition accused the ruling party of fearmongering."
-    },
-    {
-      "en": "run out of",
-      "pos": "v",
-      "ko": "다 떨어지다",
-      "ex": "We've run out of coffee again."
-    },
-    {
-      "en": "commute",
-      "pos": "v/n",
-      "ko": "통근하다 / 통근",
-      "ex": "Her daily commute takes over an hour."
+      "ko": "창의적으로 생각하다",
+      "ex": "We need to think outside the box."
     },
     {
       "en": "back up",
@@ -102,196 +48,16 @@
       "ex": "Do you have any evidence to back that up?"
     },
     {
-      "en": "hinder",
-      "pos": "v",
-      "ko": "방해하다",
-      "ex": "Bureaucracy hinders progress."
-    },
-    {
-      "en": "resist",
-      "pos": "v",
-      "ko": "저항하다",
-      "ex": "Communities resisted the gentrification project."
-    },
-    {
-      "en": "jet lag",
+      "en": "cultural identity",
       "pos": "n",
-      "ko": "시차 피로",
-      "ex": "It took me a week to get over the jet lag."
+      "ko": "문화적 정체성",
+      "ex": "Preserving cultural identity matters to migrants."
     },
     {
-      "en": "for what it's worth",
-      "pos": "phrase",
-      "ko": "참고로 말하자면",
-      "ex": "For what it's worth, I think you're right."
-    },
-    {
-      "en": "go on record",
-      "pos": "v",
-      "ko": "공식 발언하다",
-      "ex": "She went on record opposing the deal."
-    },
-    {
-      "en": "landmark",
-      "pos": "adj/n",
-      "ko": "획기적인 / 이정표",
-      "ex": "It was a landmark ruling."
-    },
-    {
-      "en": "privatization",
+      "en": "trade-off",
       "pos": "n",
-      "ko": "민영화",
-      "ex": "The privatization of hospitals is controversial."
-    },
-    {
-      "en": "be on the verge of",
-      "pos": "v",
-      "ko": "~의 직전이다",
-      "ex": "The talks are on the verge of collapse."
-    },
-    {
-      "en": "on second thought",
-      "pos": "phrase",
-      "ko": "다시 생각해보니",
-      "ex": "On second thought, let's cancel the meeting."
-    },
-    {
-      "en": "stock market",
-      "pos": "n",
-      "ko": "주식 시장",
-      "ex": "The stock market reacted badly to the news."
-    },
-    {
-      "en": "be on the same page",
-      "pos": "phrase",
-      "ko": "같은 생각이다",
-      "ex": "We need to make sure everyone is on the same page."
-    },
-    {
-      "en": "out of hand",
-      "pos": "phrase",
-      "ko": "손쓸 수 없이",
-      "ex": "The situation got out of hand quickly."
-    },
-    {
-      "en": "oppression",
-      "pos": "n",
-      "ko": "억압",
-      "ex": "They fought against centuries of oppression."
-    },
-    {
-      "en": "demographic",
-      "pos": "n/adj",
-      "ko": "인구 통계 / 인구의",
-      "ex": "The demographic shift will reshape politics."
-    },
-    {
-      "en": "therapy",
-      "pos": "n",
-      "ko": "치료, 상담",
-      "ex": "She started therapy after the breakup."
-    },
-    {
-      "en": "touristy",
-      "pos": "adj",
-      "ko": "관광객이 많은",
-      "ex": "Let's avoid touristy restaurants."
-    },
-    {
-      "en": "oppose",
-      "pos": "v",
-      "ko": "반대하다",
-      "ex": "Several lawmakers openly opposed the bill."
-    },
-    {
-      "en": "surveillance state",
-      "pos": "n",
-      "ko": "감시 국가",
-      "ex": "Critics warn of a growing surveillance state."
-    },
-    {
-      "en": "bridge",
-      "pos": "v",
-      "ko": "극복하다",
-      "ex": "We must try to bridge our differences."
-    },
-    {
-      "en": "offshore",
-      "pos": "v",
-      "ko": "해외로 이전하다",
-      "ex": "Many companies offshore their production."
-    },
-    {
-      "en": "carry weight",
-      "pos": "phrase",
-      "ko": "무게가 있다",
-      "ex": "Her opinion carries a lot of weight."
-    },
-    {
-      "en": "interfere",
-      "pos": "v",
-      "ko": "개입하다",
-      "ex": "Russia allegedly interfered in the election."
-    },
-    {
-      "en": "off the record",
-      "pos": "phrase",
-      "ko": "비공개로",
-      "ex": "He said, off the record, that he was resigning."
-    },
-    {
-      "en": "reciprocate",
-      "pos": "v",
-      "ko": "상호 대응하다",
-      "ex": "Both sides agreed to reciprocate trade concessions."
-    },
-    {
-      "en": "wake-up call",
-      "pos": "n",
-      "ko": "경각심을 일깨우는 계기",
-      "ex": "The disaster was a wake-up call."
-    },
-    {
-      "en": "bear market",
-      "pos": "n",
-      "ko": "약세장",
-      "ex": "We may be entering a prolonged bear market."
-    },
-    {
-      "en": "rent",
-      "pos": "v/n",
-      "ko": "빌리다 / 임대료",
-      "ex": "Rent in this city is incredibly high."
-    },
-    {
-      "en": "land rights",
-      "pos": "n",
-      "ko": "토지권",
-      "ex": "Indigenous communities are fighting for land rights."
-    },
-    {
-      "en": "take into consideration",
-      "pos": "phrase",
-      "ko": "고려하다",
-      "ex": "Please take our concerns into consideration."
-    },
-    {
-      "en": "subsidize",
-      "pos": "v",
-      "ko": "보조금을 지급하다",
-      "ex": "The government subsidizes renewable energy."
-    },
-    {
-      "en": "strike",
-      "pos": "n/v",
-      "ko": "파업 / 파업하다",
-      "ex": "Workers went on strike for higher wages."
-    },
-    {
-      "en": "talk someone into",
-      "pos": "phrase",
-      "ko": "설득하다",
-      "ex": "He talked me into attending the event."
+      "ko": "상충 관계",
+      "ex": "Every policy involves a trade-off."
     },
     {
       "en": "social cohesion",
@@ -300,10 +66,244 @@
       "ex": "Inequality threatens social cohesion."
     },
     {
-      "en": "break up",
+      "en": "data privacy",
+      "pos": "n",
+      "ko": "데이터 프라이버시",
+      "ex": "Data privacy laws vary widely across countries."
+    },
+    {
+      "en": "fake news",
+      "pos": "n",
+      "ko": "가짜 뉴스",
+      "ex": "Fake news spreads faster than real news."
+    },
+    {
+      "en": "rehabilitation",
+      "pos": "n",
+      "ko": "재활",
+      "ex": "Prison should focus on rehabilitation, not punishment."
+    },
+    {
+      "en": "traffic jam",
+      "pos": "n",
+      "ko": "교통 체증",
+      "ex": "I was stuck in a traffic jam for two hours."
+    },
+    {
+      "en": "oppression",
+      "pos": "n",
+      "ko": "억압",
+      "ex": "They fought against centuries of oppression."
+    },
+    {
+      "en": "red herring",
+      "pos": "n",
+      "ko": "엉뚱한 주제로 주의 분산",
+      "ex": "That argument is a red herring."
+    },
+    {
+      "en": "off the beaten path",
+      "pos": "adj",
+      "ko": "잘 알려지지 않은",
+      "ex": "We prefer off-the-beaten-path destinations."
+    },
+    {
+      "en": "civic engagement",
+      "pos": "n",
+      "ko": "시민 참여",
+      "ex": "Civic engagement is essential for democracy."
+    },
+    {
+      "en": "outsource",
       "pos": "v",
-      "ko": "헤어지다",
-      "ex": "They broke up after two years together."
+      "ko": "외주화하다",
+      "ex": "Jobs were outsourced to cheaper markets."
+    },
+    {
+      "en": "overwhelmed",
+      "pos": "adj",
+      "ko": "압도된",
+      "ex": "She felt overwhelmed by all the work."
+    },
+    {
+      "en": "deficit",
+      "pos": "n",
+      "ko": "적자, 부족분",
+      "ex": "The budget deficit has grown each year."
+    },
+    {
+      "en": "misinformation",
+      "pos": "n",
+      "ko": "잘못된 정보",
+      "ex": "Misinformation is a major challenge."
+    },
+    {
+      "en": "cronyism",
+      "pos": "n",
+      "ko": "연줄 등용",
+      "ex": "Cronyism undermines merit-based governance."
+    },
+    {
+      "en": "riot",
+      "pos": "n/v",
+      "ko": "폭동 / 폭동을 일으키다",
+      "ex": "Riots broke out after the verdict."
+    },
+    {
+      "en": "apartheid",
+      "pos": "n",
+      "ko": "아파르트헤이트",
+      "ex": "South Africa dismantled apartheid in 1994."
+    },
+    {
+      "en": "exploitation",
+      "pos": "n",
+      "ko": "착취",
+      "ex": "Workers suffer from exploitation in some industries."
+    },
+    {
+      "en": "have a point",
+      "pos": "phrase",
+      "ko": "일리가 있다",
+      "ex": "You have a point — it's not that simple."
+    },
+    {
+      "en": "flooding",
+      "pos": "n",
+      "ko": "홍수",
+      "ex": "Severe flooding displaced thousands of residents."
+    },
+    {
+      "en": "stoke",
+      "pos": "v",
+      "ko": "부추기다",
+      "ex": "The speech stoked fears of a recession."
+    },
+    {
+      "en": "accountability",
+      "pos": "n",
+      "ko": "책임감",
+      "ex": "There's a lack of accountability in the system."
+    },
+    {
+      "en": "chilly",
+      "pos": "adj",
+      "ko": "쌀쌀한",
+      "ex": "It's a bit chilly — bring a jacket."
+    },
+    {
+      "en": "treaty",
+      "pos": "n",
+      "ko": "조약",
+      "ex": "Both countries signed the peace treaty."
+    },
+    {
+      "en": "pick up the pieces",
+      "pos": "phrase",
+      "ko": "수습하다",
+      "ex": "Someone has to pick up the pieces."
+    },
+    {
+      "en": "to be honest",
+      "pos": "phrase",
+      "ko": "솔직히",
+      "ex": "To be honest, I don't think it'll work."
+    },
+    {
+      "en": "living wage",
+      "pos": "n",
+      "ko": "생활 임금",
+      "ex": "A living wage should cover basic needs."
+    },
+    {
+      "en": "cybersecurity",
+      "pos": "n",
+      "ko": "사이버 보안",
+      "ex": "Cybersecurity threats are growing rapidly."
+    },
+    {
+      "en": "gender identity",
+      "pos": "n",
+      "ko": "성 정체성",
+      "ex": "Respecting gender identity is a matter of dignity."
+    },
+    {
+      "en": "by the same token",
+      "pos": "phrase",
+      "ko": "마찬가지로",
+      "ex": "By the same token, we should help others too."
+    },
+    {
+      "en": "bill",
+      "pos": "n",
+      "ko": "법안",
+      "ex": "The bill passed with a narrow majority."
+    },
+    {
+      "en": "soar",
+      "pos": "v",
+      "ko": "급등하다",
+      "ex": "House prices have soared in recent years."
+    },
+    {
+      "en": "abstain",
+      "pos": "v",
+      "ko": "기권하다",
+      "ex": "Several lawmakers chose to abstain from the vote."
+    },
+    {
+      "en": "hardliner",
+      "pos": "n",
+      "ko": "강경파",
+      "ex": "Hardliners in the government blocked the deal."
+    },
+    {
+      "en": "commute",
+      "pos": "v",
+      "ko": "감형하다",
+      "ex": "Her sentence was commuted to five years."
+    },
+    {
+      "en": "stock market",
+      "pos": "n",
+      "ko": "주식 시장",
+      "ex": "The stock market reacted badly to the news."
+    },
+    {
+      "en": "status quo",
+      "pos": "n",
+      "ko": "현상 유지",
+      "ex": "The election changed the status quo."
+    },
+    {
+      "en": "inflation",
+      "pos": "n",
+      "ko": "인플레이션",
+      "ex": "Rising inflation is hitting households hard."
+    },
+    {
+      "en": "jet lag",
+      "pos": "n",
+      "ko": "시차 피로",
+      "ex": "It took me a week to get over the jet lag."
+    },
+    {
+      "en": "inauguration",
+      "pos": "n",
+      "ko": "취임식",
+      "ex": "The inauguration will be held on January 20th."
+    },
+    {
+      "en": "bias",
+      "pos": "n",
+      "ko": "편견",
+      "ex": "Unconscious bias affects hiring decisions."
+    },
+    {
+      "en": "stall",
+      "pos": "v",
+      "ko": "교착 상태가 되다",
+      "ex": "Negotiations have stalled again."
     }
   ]
 }
